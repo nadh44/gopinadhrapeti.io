@@ -1,0 +1,70 @@
+<style>
+	.thumb
+	{
+		width: 100px;
+		height: 100px;
+	}
+	.latest-section
+	{
+		
+		margin-bottom: 4em;
+	}
+	.latest-center
+	{
+		margin-top: 2em;
+		margin-bottom: 2em;
+		text-align: center;
+	}
+</style>
+<div class="container latest-section">
+	<div class="row">
+		<div class="col-md-12">
+			<h2 class="latest-center">Latest Blogs</h2>
+		</div>
+	</div>	
+	<div class="row">	
+		<div class="col-md-12">
+			<div class="table-responsive">          
+			  	<table class="table table-striped">
+			    	<thead>
+					    <tr>
+					       <th>Post</th>
+					       <th>Posted Date</th>
+					       <th>Posted By</th>
+					       <th>Title</th>
+					       <th>Category</th>
+					       <th colspan="3">Actions</th>
+					       <th>Active/Inactive</th>
+					    </tr>
+			    	</thead>
+			    	
+				    	<tbody>
+				    		<% @blog.each do |blog| %>
+				      		<tr>
+						        <td>
+						        	<%= link_to blog do %>
+						        		<%= image_tag blog.blog_photos[0].image.url, class: "thumb" if blog.blog_photos.length > 0 %>
+						        	<% end %>	
+						        </td>
+						        <td><%= blog.created_at.to_time.strftime("%B %d, %Y") %></td>		
+						        <% if blog.name.present? %>
+						        <td>Posted By <%= blog.name %></td>
+						        <% else %>
+						        <td>Not Mentioned</td>
+						        <% end %>
+						        <td><%= blog.title %></td>
+						        <td><%= blog.category %></td>
+						        <td><%= link_to "Edit", edit_blog_path(blog), class: "info" %></td>
+								<td><%= link_to 'Delete', blog_path(blog), :method => 'delete', data: {confirm: "Are you sure?"}, :class => 'info' %></td>
+								<td><%= link_to "Qucik View", blog_path(blog), class: "info" %></td>
+
+						        <%= render blog %>
+				      		</tr>
+				      		<% end %>
+				    	</tbody>
+			    	
+			  	</table>
+			</div>
+		</div>
+	</div>
+</div>

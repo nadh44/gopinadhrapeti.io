@@ -1,0 +1,203 @@
+<style>
+.about_content1.portfolio{
+margin-top: 87px;
+}
+</style>
+<div class="about_content1 portfolio">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="p-name">									
+						<img class="pname-img" src="" style="display: none; opacity: 0;">
+						<h1>Our <span class="ylw_service">Portfolio</span></h1>
+						<span id="btn1"><a href="" target="_blank">Visit Website</a></span>									
+					</div>								
+					<div class="p-info">
+						We design interactive online experiences by keeping in mind latest industry trends and technologies. We offer services and solutions tailored to match client expectations and international standards.					</div>
+				</div>
+				<div class="col-sm-8 no-padding">
+					<div class="tab-content">
+					 	<div class="portfolio-cat" id="">
+							<div id="home" class="tab-pane fade in active">
+								<div class="p-date"><span>Starting Date:</span>	<span id="startdate"></span></div>
+								<div class="p-image">
+									<div class="base-img">
+																					
+										<div class="base-img1" style="background: url('');">
+
+											<div class="innerslider" id="innerSlider">
+												
+												<div class="swiper-container w home swiper-container-horizontal swiper-container-fade">
+												  
+												   <div class="swiper-wrapper w home" style="transition-duration: 0ms;"><div class="swiper-slide w home swiper-slide-duplicate" data-swiper-slide-index="7" style="width: 780px; transform: translate3d(0px, 0px, 0px); opacity: 1; transition-duration: 0ms;"><a href="http://aryanstoursandtravels.com" target="_blank" id="blue-link">Visit Website</a><img src="https://www.brihaspatitech.com/wp-content/uploads/2017/07/4-aryans-1.jpg" alt="Aryan Tours &amp; Travels" style="opacity: 1;"></div>
+														<div class="swiper-slide w home active" data-swiper-slide-index="0" style="width: 780px; transform: translate3d(-780px, 0px, 0px); opacity: 1; transition-duration: 0ms;"><a href="http://www.foxchapelpublishing.com/" target="_blank" id="foxchapel">Visit Website</a><img src="https://www.brihaspatitech.com/wp-content/uploads/2017/07/7-foxchapel-1.jpg" alt="Fox Chapel Publishing" style="opacity: 1;"></div>
+														
+														
+														<div class="swiper-slide w home swiper-slide-prev" data-swiper-slide-index="2" style="width: 780px; transform: translate3d(-2340px, 0px, 0px); opacity: 1; transition-duration: 0ms;"><a href="http://www.akyla.nl/" target="_blank" id="akyla">Visit Website</a><img src="https://www.brihaspatitech.com/wp-content/uploads/2017/07/4-akyla-1-1.jpg" alt="akyla" style="opacity: 1;"></div>
+														
+														 
+														 <div class="swiper-slide w home swiper-slide-next" data-swiper-slide-index="4" style="width: 780px; transform: translate3d(-3900px, 0px, 0px); opacity: 0; transition-duration: 0ms;"><a href="http://automedx.biz/" target="_blank" id="border-white">Visit Website</a><img src="https://www.brihaspatitech.com/wp-content/uploads/2017/07/7-automedx.jpg" alt="AutoMedx" style="opacity: 1;"></div>
+														 
+														
+														 
+														 
+												    	<div class="swiper-slide w home" data-swiper-slide-index="6" style="width: 780px; transform: translate3d(-5460px, 0px, 0px); opacity: 0; transition-duration: 0ms;"><a href="http://www.mertonchamber.co.uk/" target="_blank" id="mcc">Visit Website</a><img src="https://www.brihaspatitech.com/wp-content/uploads/2017/07/1-mcc-1-1.jpg" alt="merton chamber of ecommerce" style="opacity: 1;"></div>
+												    	
+												    	
+												    	<div class="swiper-slide w home" data-swiper-slide-index="7" style="width: 780px; transform: translate3d(-6240px, 0px, 0px); opacity: 0; transition-duration: 0ms;"><a href="http://aryanstoursandtravels.com" target="_blank" id="blue-link">Visit Website</a><img src="https://www.brihaspatitech.com/wp-content/uploads/2017/07/4-aryans-1.jpg" alt="Aryan Tours &amp; Travels" style="opacity: 1;"></div>
+
+												    <div class="swiper-slide w home active swiper-slide-duplicate" data-swiper-slide-index="0" style="width: 780px; transform: translate3d(-7020px, 0px, 0px); opacity: 0; transition-duration: 0ms;"><a href="http://www.foxchapelpublishing.com/" target="_blank" id="foxchapel">Visit Website</a><img src="https://www.brihaspatitech.com/wp-content/uploads/2017/07/7-foxchapel-1.jpg" alt="Fox Chapel Publishing" style="opacity: 1;"></div></div>
+
+												    <div class="swiper-pagination w home swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span></div>
+													    <div class="swiper-button-prev w home"></div>
+														<div class="swiper-button-next w home"></div>
+												</div>	
+	<script>				
+    	var mySwiper2 = new Swiper ('.swiper-container.w.home', {
+		    loop: true,
+		    autoplay:4000,
+		 nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+		    effect:'fade',
+		    watchSlidesProgress: true,
+		    pagination: '.swiper-pagination.w.home',
+			paginationClickable: true,
+        	onSlideChangeStart: function(mySwiper2){
+        		function geSlideDataIndex(mySwiper2){
+				    var activeIndex = mySwiper2.activeIndex;
+				    var slidesLen = mySwiper2.slides.length;
+				    if(mySwiper2.params.loop){
+				        switch(mySwiper2.activeIndex){
+				            case 0:
+				                activeIndex = slidesLen-3;
+				                break;
+				            case slidesLen-1:
+				                activeIndex = 0;
+				                break;
+				            default:
+				                --activeIndex;
+				        }
+				    }
+				    return  activeIndex;
+				}
+				var current_slide = geSlideDataIndex(mySwiper2);
+        		jQuery( "li.li_portfolio_category" ).each(function() { 
+        			var abc = jQuery( this ).attr('data2'); 
+					if(abc == current_slide){
+					 	jQuery( this ).addClass( "active" );
+					 }
+				});
+        	},
+        	onSlideNextStart: function(mySwiper2){
+        		function geSlideDataIndex(mySwiper2){
+				    var activeIndex = mySwiper2.activeIndex;
+				    var slidesLen = mySwiper2.slides.length;
+				    if(mySwiper2.params.loop){
+				        switch(mySwiper2.activeIndex){
+				            case 0:
+				                activeIndex = slidesLen-3;
+				                break;
+				            case slidesLen-1:
+				                activeIndex = 0;
+				                break;
+				            default:
+				                --activeIndex;
+				        }
+				    }
+				    return  activeIndex;
+				}
+				var current_slide = geSlideDataIndex(mySwiper2);
+				var j = current_slide-1;
+				jQuery( "li.li_portfolio_category" ).each(function() { 
+				 	var abc = jQuery( this ).attr('data2'); 
+					if(abc != current_slide){
+						jQuery(this).removeClass("active");	
+					}
+				});	
+			},
+			onSlidePrevStart: function(mySwiper2){
+        		function geSlideDataIndex(mySwiper2){
+				    var activeIndex = mySwiper2.activeIndex;
+				    var slidesLen = mySwiper2.slides.length;
+				    if(mySwiper2.params.loop){
+				        switch(mySwiper2.activeIndex){
+				            case 0:
+				                activeIndex = slidesLen-3;
+				                break;
+				            case slidesLen-1:
+				                activeIndex = 0;
+				                break;
+				            default:
+				                --activeIndex;
+				        }
+				    }
+				    return activeIndex;
+				}
+				var current_slide = geSlideDataIndex(mySwiper2);
+				var j = current_slide-1;
+				jQuery( "li.li_portfolio_category" ).each(function() { 
+				 	var abc = jQuery( this ).attr('data2'); 
+					if(abc != current_slide){
+						jQuery(this).removeClass("active");	
+					}
+				});	
+			},
+			onReachEnd: function(mySwiper2){
+				function geSlideDataIndex(mySwiper2){
+				    var activeIndex = mySwiper2.activeIndex;
+				    var slidesLen = mySwiper2.slides.length;
+				    if(mySwiper2.params.loop){
+				        switch(mySwiper2.activeIndex){
+				            case 0:
+				                activeIndex = slidesLen-3;
+				                break;
+				            case slidesLen-1:
+				                activeIndex = 0;
+				                break;
+				            default:
+				                --activeIndex;
+				        }
+				    }
+				    return activeIndex;
+				}
+				var current_slide = geSlideDataIndex(mySwiper2);
+				jQuery( "li.li_portfolio_category" ).each(function() { 
+				 	var abc = jQuery( this ).attr('data2'); 
+					if(abc == current_slide){
+						jQuery(this).removeClass("active");	
+					}
+				});
+			}
+		});       
+    </script>
+			
+											</div>
+	
+											<img src="" alt="" class="innerimage" style="opacity: 0;">
+											
+										</div>
+									</div>
+								</div>
+								<p class="p-duration">
+									<span>Duration of the Project: </span><span id="duration"></span>
+								</p>
+	
+							</div>
+						</div>
+					</div> 
+				</div>
+				<div class="col-sm-4 port1">
+					<div class="outer-tabs">
+						<div class="breadcrumbs">
+							<p id="breadcrumbs-portfolio"> Categories</p>
+						</div>
+						
+						<ul class="nav myportnav" id="all_portfolio_category">
+						 	<li class="li_portfolio_category" id="aaa0" data="6" data2="0"><img src="https://www.brihaspatitech.com/wp-content/uploads/2017/04/ecommerce.png" class="portimg portvik0" style="opacity: 1;"><a href="/">Ecommerce Websites</a></li><li class="li_portfolio_category" id="aaa1" data="3" data2="1"><img src="https://www.brihaspatitech.com/wp-content/uploads/2017/04/education1.png" class="portimg portvik1" style="opacity: 1;"><a href="/">Education Portals</a></li><li class="li_portfolio_category active" id="aaa3" data="10" data2="3"><img src="https://www.brihaspatitech.com/wp-content/uploads/2017/04/mobile_app.png" class="portimg portvik3" style="opacity: 1;"><a href="/">Mobile Applications</a></li><li class="li_portfolio_category" id="aaa5" data="9" data2="5"><img src="https://www.brihaspatitech.com/wp-content/uploads/2017/04/real-estate.png" class="portimg portvik5" style="opacity: 1;"><a href="/">Property Portals</a></li><li class="li_portfolio_category" id="aaa7" data="7" data2="7"><img src="https://www.brihaspatitech.com/wp-content/uploads/2017/04/travel.png" class="portimg portvik7" style="opacity: 1;"><a href="/">Travel and Booking Portals</a></li>						</ul> 
+
+						<div id="loader"><img src="https://www.brihaspatitech.com/wp-content/themes/TBI/images/iconss/ringp.gif" style="width: auto; height: auto; opacity: 1;"></div>
+					</div> 
+				</div>
+			</div>
+		</div>
+	</div>

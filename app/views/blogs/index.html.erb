@@ -1,0 +1,95 @@
+<style>
+.mainHeading {
+    font-size: 22px;
+}
+.newsDesc {
+    font-size: 16px;
+}
+/*Cards*/
+
+.row {
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.cardAlignment {
+    display: flex;
+}
+
+.card {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+    border-radius: 5px;
+}
+
+.mainCard {
+    background-color: #ffffff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.mainCard:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.newsImage {
+    width: 100%;
+    height: 250px !important;
+    border-radius: 5px 5px 0 0;
+}
+
+.cardContainer {
+		padding: 2px 16px;
+}
+
+/*Cards*/
+</style>
+		<div style="margin-top: 108px; margin-bottom: 50px">
+				<div class="container">
+          <div class="row">
+						<% @blog.each do |blog| %>
+						<div class="col-md-4 cardAlignment">
+								<div class="mainCard">
+				<% if blog.blog_photos.present?%>
+						<%= image_tag blog.blog_photos[0].image.url,  class: "img-responsive newsImage" if blog.blog_photos.length > 0 %>
+						 <%else%>
+						   
+				<%end%>
+					<div class="cardContainer">
+				<h2 class="mainHeading">
+					 <%= link_to blog do%>
+
+					<%=blog.title%></h2>
+
+				 <%end%>
+	
+				<p class="newsDesc"><%= truncate(sanitize(blog.description, tags: []), length: 200) %></p>
+				
+		 <%= link_to blog ,{ :class=>"more-link" } do%>
+<p class="newsDesc">
+				Read this Post 
+				</p>
+		<%end%>
+			
+
+
+
+
+	</div>
+</div>
+</div>
+<%end%>
+</div>
+</div>
+</div>

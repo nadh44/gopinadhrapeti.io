@@ -1,0 +1,4 @@
+
+(function($){var sign_up=$('.right_side.servicepage').offset().top;$(window).scroll(function(){var height=$(window).scrollTop();if(height>sign_up){$('.right_side.servicepage').addClass("p_fixed");}
+else if(height<sign_up){$('.right_side.servicepage').removeClass("p_fixed");}});var sign_up2=$('.service_stop_form').offset().top;$(window).scroll(function(){var height=$(window).scrollTop();if(height>sign_up2){$('.right_side.servicepage').addClass("p_fixed1");$('.right_side.servicepage').parent().addClass("p_fixed1_parent");}
+else if(height<sign_up2){$('.right_side.servicepage').removeClass("p_fixed1");$('.right_side.servicepage').parent().removeClass("p_fixed1_parent");}});})(jQuery);

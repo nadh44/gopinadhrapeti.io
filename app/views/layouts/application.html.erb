@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= content_for?(:title) ? yield(:title) : 'Malibu IT Labs' %></title>
+  <meta name="keywords" content="<%= content_for?(:meta_keywords) ? yield(:meta_keywords) : "MalibuItLabs,Malibu IT Labs,MalibuItLabs,malibuitlabs,malibu vizag,vizag malibuitlabs,software companies,software in vizag, visakhapatanam,itsez,andhra"%>"/>
+  <meta name="google-site-verification" content="IDeCHUtgCmnYEcMEVIv2a7wlq04K5ZnKjkwyKLvGeQU" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 ,user-scalable=no "/>
+     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+     <meta name="google" content="nositelinkssearchbox" />
+    <meta name="google-site-verification" content="VQnrz1Gf7R9zJseOWoNExGQIcOL1Bne9CZz5NLv5ay0" />
+     <meta charset="utf-8" /> 
+        <%= csrf_meta_tags %>
+        <%= csp_meta_tag %>
+        <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <!--link rel='stylesheet' id='bootstrap-min-css-css'  href='/assets/bootstrap.css' type='text/css' media='all' />
+            <link rel='stylesheet' id='twentysixteen-style-css'  href='/assets/new-style.css' type='text/css' media='all' />
+            <link rel='stylesheet' id='swiper-css-css'  href='/assets/swiper.min.css' type='text/css' media='all' />
+            <link rel='stylesheet' id='animate-css-css'  href='/assets/animate.min.css' type='text/css' media='all' />
+            <link rel='stylesheet' id='responsive-css-css'  href='/assets/responsive.css' type='text/css' media='all' />
+            <link rel='stylesheet' id='normalize-css-css'  href='/assets/normalize.css' type='text/css' media='all' /-->
+             <%= stylesheet_link_tag "bootstrap.css" %>
+               <%= stylesheet_link_tag "swiper.min.css" %>
+                <%= stylesheet_link_tag "responsive.css" %>
+                 <%= stylesheet_link_tag "normalize.css" %>
+                  <%= stylesheet_link_tag "new-style.css" %>
+                   <%= stylesheet_link_tag "main.min.css" %>
+                    <%= stylesheet_link_tag "js_composer.min.css" %>
+                     <%= stylesheet_link_tag "font-awesome.min.css" %>
+                      <%= stylesheet_link_tag "animate.min.css" %>
+                      
+            <link rel='stylesheet' id='js_composer_front-css'  href='/assets/js_composer.min.css' type='text/css' media='all' />
+            <link rel="icon" href="https://res.cloudinary.com/malibuitlabs/image/upload/s--rXud4zOr--/q_jpegmini/v1549601619/mit_png_2_i2byts_fasdnz.png" sizes="32x32" />
+            <link rel="icon" href="https://res.cloudinary.com/malibuitlabs/image/upload/s--rXud4zOr--/q_jpegmini/v1549601619/mit_png_2_i2byts_fasdnz.png" sizes="192x192" />
+            <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.malibuitlabs.com" />
+            <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="www.malibuitlabs.com" /> 
+            <meta name="generator" content="WordPress 4.6.11" />
+            <link rel="alternate" type="application/json+oembed" href="https://www.malibuitlabs.com" />
+            <link rel="alternate" type="text/xml+oembed" href="www.malibuitlabs.com" />
+
+            <style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+            <meta name="generator" content="" />
+          <link href="https://fonts.googleapis.com/css?family=Montserrat|Titillium+Web:600" rel="stylesheet">
+          <noscript><style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript> 
+         
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+          <script>
+          	var isMobile = window.orientation > -1;
+            
+           
+
+          </script>
+ <!-- Google Tag Manager -->
+ <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-83241788-1"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-83241788-1');
+</script>     
+<!-- End Google Tag Manager -->
+  </head>
+
+  <body>
+     
+            <%= render 'layouts/navbar'%>
+          
+              
+            
+    
+          <%= yield %>
+      
+     <%= render 'layouts/footer'%>
+      <%= javascript_include_tag "jquery.flip.min.js" %>
+   
+        <%= javascript_include_tag "jquery.multilevelpushmenu.min.js" %>
+        
+          <%= javascript_include_tag "main.min.js" %>
+           <%= javascript_include_tag "mlpushmenu.js" %>
+            <%= javascript_include_tag "modernizr.custom.js" %>
+             <%= javascript_include_tag "modernizr.js" %> 
+            
+            <%= javascript_include_tag "myflip.js" %>
+             <%= javascript_include_tag "owl.carousel.js" %>
+               
+            <%= javascript_include_tag "picturefill.min.js" %>
+             <%= javascript_include_tag "TweenMax.min.js" %>
+               
+      
+    <!--script src="/assets/jquery.js"></script-->
+        <%= javascript_include_tag "jquery.js" %>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!--script src="/assets/bootstrap.js"></script-->
+     <%= javascript_include_tag "bootstrap.js" %>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+   <!--script type='text/javascript' src='/assets/swiper.jquery.min.js'></script-->
+    <%= javascript_include_tag "swiper.jquery.min.js" %>
+<!--script type="text/javascript" src="/assets/wp-embed.min.js"></script-->
+
+   <!--script type="text/javascript" src="/assets/js_composer_front.min.js"></script-->
+  <%= javascript_include_tag "js_composer_front.min.js" %>
+<!--script data-cfasync="false" src="/assets/jquery-1.10.2.min.js"></script-->
+<!--script  src="/assets/jquery.flip.min.js"></script-->
+ <%= javascript_include_tag "jquery.flip.min.js" %>
+
+<!--script  src="/assets/myflip.js"></script>
+       
+                <!--new---slider-end-->
+      <!-- .site-inner -->  
+      
+            </div>
+          </div><!-- .site -->
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/5c6159e16cb1ff3c14cbf532/default';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+ 
+<script type="text/javascript">
+(function(url){
+  if(/(?:Chrome\/26\.0\.1410\.63 Safari\/537\.31|WordfenceTestMonBot)/.test(navigator.userAgent)){ return; }
+  var addEvent = function(evt, handler) {
+    if (window.addEventListener) {
+      document.addEventListener(evt, handler, false);
+    } else if (window.attachEvent) {
+      document.attachEvent('on' + evt, handler);
+    }
+  };
+  var removeEvent = function(evt, handler) {
+    if (window.removeEventListener) {
+      document.removeEventListener(evt, handler, false);
+    } else if (window.detachEvent) {
+      document.detachEvent('on' + evt, handler);
+    }
+  };
+  var evts = 'contextmenu dblclick drag dragend dragenter dragleave dragover dragstart drop keydown keypress keyup mousedown mousemove mouseout mouseover mouseup mousewheel scroll'.split(' ');
+  var logHuman = function() {
+    var wfscr = document.createElement('script');
+    wfscr.type = 'text/javascript';
+    wfscr.async = true;
+    wfscr.src = url + '&r=' + Math.random();
+    (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(wfscr);
+    for (var i = 0; i < evts.length; i++) {
+      removeEvent(evts[i], logHuman);
+    }
+  };
+  for (var i = 0; i < evts.length; i++) {
+    addEvent(evts[i], logHuman);
+  }
+})('//');
+</script> 
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+  var newURl = window.location.href;
+  console.log(newURl);
+  $( ".page_url" ).val(newURl);
+  var pageTitle = $('.banner_text_inner h1').text();
+  $( ".page_title" ).val(pageTitle);
+});
+</script>
+
+
+    <script type="text/javascript">
+      jQuery("#logofoot").mouseover(function(){jQuery(this).attr("src","https://res.cloudinary.com/malibuitlabs/image/upload/v1549601619/mit_png_2_i2byts_fasdnz.png")}),jQuery("#logofoot").mouseout(function(){jQuery(this).attr("src","https://res.cloudinary.com/malibuitlabs/image/upload/v1549601619/mit_png_2_i2byts_fasdnz.png")});
+    
+/*
+                 jQuery(".home .navigation").removeClass("nav_white");
+            jQuery(window).scroll(function(){var n=jQuery(window).scrollTop();n>=1?jQuery(".home .navigation").addClass("nav_white"):jQuery(".home .navigation").removeClass("nav_white")}),jQuery("body").click(function(){jQuery(".wpcf7-response-output").css("display","none").fadeOut(500)});*/
+
+         
+      
+    jQuery(".footer_fix_info a").click(function(){var o=jQuery(".footer_fix_info").css("bottom");"0px"==o?(jQuery(".footer_fix_info").animate({bottom:"-120px"},200),jQuery(".footer_fix_info .fa.fa-angle-down").css("transform","rotate(-180deg)")):(jQuery(".footer_fix_info").animate({bottom:"0px"},200),jQuery(".footer_fix_info .fa.fa-angle-down").css("transform","rotate(0deg)"))});
+    
+    
+    jQuery(document).on('click','.ddd',function(event) {
+  event.preventDefault();
+ $('html,body').animate( { scrollTop:$(this.hash).offset().top -46 } , 2000);
+  } ); 
+  
+  </script>
+
+</body>
+<!--Start of Tawk.to Script (0.3.2)-->
+
+</html>

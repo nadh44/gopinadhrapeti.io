@@ -1,0 +1,814 @@
+
+
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+	      
+    <!-- <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script> -->
+		<style amp-custom>
+		/*  header, footer css  */
+@font-face {     font-family: 'myriad-set-pro';     src: url('fonts/myriad-set-pro_text.ttf');     src: url('fonts/myriad-set-pro_text.otf');     src: url('fonts/myriad-set-pro_text.woff'); }
+@font-face {     font-family: 'myriad-set-pro-bold';     src: url('fonts/myriad-set-pro_bold.ttf');     src: url('fonts/myriad-set-pro_bold.otf');     src: url('fonts/myriad-set-pro_bold.woff'); }
+@font-face {     font-family: 'myriad-set-pro-thin';     src: url('fonts/myriad-set-pro_thin.ttf');     src: url('fonts/myriad-set-pro_thin.otf');     src: url('fonts/myriad-set-pro_thin.woff'); }
+@font-face {     font-family: 'myriad-set-pro-medium';     src: url('fonts/myriad-set-pro_medium.ttf');     src: url('fonts/myriad-set-pro_medium.otf');     src: url('fonts/myriad-set-pro_medium.woff'); }
+@font-face {     font-family: 'myriad-set-pro_semibold';     src: url('fonts/myriad-set-pro_semibold.ttf');     src: url('fonts/myriad-set-pro_semibold.otf');     src: url('fonts/myriad-set-pro_semibold.woff'); }
+@font-face {   font-family: 'Open Sans';   font-style: normal;   font-weight: 300;   src: local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v14/DXI1ORHCpsQm3Vp6mXoaTegdm0LZdjqr5-oayXSOefg.woff2) format('woff2'); }
+@font-face {   font-family: 'Open Sans';   font-style: normal;   font-weight: 400;   src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v14/cJZKeOuBrn4kERxqtaUH3VtXRa8TVwTICgirnJhmVJw.woff2) format('woff2'); }
+@font-face {   font-family: 'Open Sans';   font-style: normal;   font-weight: 600;   src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url(https://fonts.gstatic.com/s/opensans/v14/MTP_ySUJH_bn48VBG8sNSugdm0LZdjqr5-oayXSOefg.woff2) format('woff2'); }
+@font-face {   font-family: 'Open Sans';   font-style: normal;   font-weight: 700;   src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v14/k3k702ZOKiLJc3WVjuplzOgdm0LZdjqr5-oayXSOefg.woff2) format('woff2'); }
+@font-face {   font-family: 'Open Sans';   font-style: normal;   font-weight: 800;   src: local('Open Sans ExtraBold'), local('OpenSans-ExtraBold'), url(https://fonts.gstatic.com/s/opensans/v14/EInbV5DfGHOiMmvb1Xr-hugdm0LZdjqr5-oayXSOefg.woff2) format('woff2'); }
+@font-face {   font-family: 'Raleway';   font-style: normal;   font-weight: 300;   src: local('Raleway Light'), local('Raleway-Light'), url(https://fonts.gstatic.com/s/raleway/v11/-_Ctzj9b56b8RgXW8FArifk_vArhqVIZ0nv9q090hN8.woff2) format('woff2'); }
+@font-face {   font-family: 'Raleway';   font-style: normal;   font-weight: 400;   src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v11/0dTEPzkLWceF7z0koJaX1A.woff2) format('woff2'); }
+@font-face {   font-family: 'Raleway';   font-style: normal;   font-weight: 500;   src: local('Raleway Medium'), local('Raleway-Medium'), url(https://fonts.gstatic.com/s/raleway/v11/CcKI4k9un7TZVWzRVT-T8_k_vArhqVIZ0nv9q090hN8.woff2) format('woff2'); }
+@font-face {   font-family: 'Raleway';   font-style: normal;   font-weight: 600;   src: local('Raleway SemiBold'), local('Raleway-SemiBold'), url(https://fonts.gstatic.com/s/raleway/v11/xkvoNo9fC8O2RDydKj12b_k_vArhqVIZ0nv9q090hN8.woff2) format('woff2'); }
+@font-face {   font-family: 'Raleway';   font-style: normal;   font-weight: 700;   src: local('Raleway Bold'), local('Raleway-Bold'), url(https://fonts.gstatic.com/s/raleway/v11/JbtMzqLaYbbbCL9X6EvaI_k_vArhqVIZ0nv9q090hN8.woff2) format('woff2'); }
+@font-face {   font-family: 'Raleway';   font-style: normal;   font-weight: 800;   src: local('Raleway ExtraBold'), local('Raleway-ExtraBold'), url(https://fonts.gstatic.com/s/raleway/v11/1ImRNPx4870-D9a1EBUdPPk_vArhqVIZ0nv9q090hN8.woff2) format('woff2'); }
+@font-face {   font-family: 'Raleway';   font-style: normal;   font-weight: 900;   src: local('Raleway Black'), local('Raleway-Black'), url(https://fonts.gstatic.com/s/raleway/v11/PKCRbVvRfd5n7BTjtGiFZPk_vArhqVIZ0nv9q090hN8.woff2) format('woff2'); }
+@font-face{font-family:'MavenProBlack';src:url('http://www.brihaspatitech.com/wp-content/themes/TBI/fonts/MavenProBlack.ttf');src:url('http://www.brihaspatitech.com/wp-content/themes/TBI/fonts/MavenProBlack.otf');src:url('http://www.brihaspatitech.com/wp-content/themes/TBI/fonts/MavenProBlack.woff');}
+@font-face{font-family:'MavenProRegular';src:url('http://www.brihaspatitech.com/wp-content/themes/TBI/fonts/MavenProRegular.ttf');src:url('http://www.brihaspatitech.com/wp-content/themes/TBI/fonts/MavenProRegular.otf');src:url('http://www.brihaspatitech.com/wp-content/themes/TBI/fonts/MavenProRegular.woff');}
+@font-face { 	font-family: 'Lato-Regular'; 	src: url('fonts/Lato-Regular.ttf');src: url('fonts/Lato-Regular.otf');src: url('fonts/Lato-Regular.woff'); 	}	
+@font-face { 	font-family: 'Lato-Light'; 	src: url('fonts/Lato-Light.ttf');src: url('fonts/Lato-Light.otf');src: url('fonts/Lato-Light.woff'); 	}
+@font-face { 	font-family: 'Lato-Bold'; 	src: url('fonts/Lato-Bold.ttf');src: url('fonts/Lato-Bold.otf');src: url('fonts/Lato-Bold.woff'); 	}
+* { -webkit-tap-highlight-color:rgba(0,0,0,0);     tap-highlight-color:rgba(0,0,0,0);     -moz-tap-highlight-color:rgba(0,0,0,0); }
+.mp-menu.mp-cover 
+{
+ height: 100vh;
+  } 
+.content-section-banner span { color: #ffcc00; } .ms-bullets.ms-dir-h { bottom: 46px!important;     opacity: 1!important; }
+.ms-skin-default .ms-bullet { width: 12px; height: 12px; background: #e4e4e4!important; margin: 4px; border-radius: 50%; } .ms-slide { height: 100vh!important; }
+.ms-bullets.ms-dir-h {     position: absolute;     bottom: 40px!important;     right: 50%;     width: 100px!important; 	display:block!important;     opacity: 1!important;     width: 67px!important; }
+.ms-skin-default .ms-bullet-selected {     background: #ffcc00!important; }
+a,a:focus{ 	outline:0 none!important; 	   -webkit-touch-callout: none!important;     -webkit-user-select: none!important;     -khtml-user-select: none!important;     -moz-user-select: none!important     -ms-user-select: none!important;     user-select: none!important; 	 -webkit-tap-highlight-color:rgba(0,0,0,0);     tap-highlight-color:rgba(0,0,0,0);     -moz-tap-highlight-color:rgba(0,0,0,0); }
+.pri-links {   color: inherit;   text-decoration: none; } .pri-links:hover,.pri-links:active,.pri-links:focus { color: hsl(48, 100%, 50%);   text-decoration: none; }
+.text_on_banner a{   color: #ffcc00;   font-weight: bold;    text-decoration:none; }
+.text_on_banner a:hover {   border-bottom: 2px solid #e4b703;   color: #e4b703;   text-decoration: none;   transition: all 0.1s ease 0s;   -webkit-transition: all 0.1s ease 0s;   -moz-transition: all 0.1s ease 0s;   -ms-transition: all 0.1s ease 0s; }
+span.wpcf7-not-valid-tip {     color: red;     font-size: 1em;     display: block;     text-align: left;     position: absolute;     width: 200px;     left: 13px;     z-index: 9;     font-weight: 300;     font-family: "open sans",sans-serif; }
+/* scrolling btn */ .chat_window { position: absolute !important;     bottom: 54px;     z-index: 8;     opacity: 1;     background: #fff;     display: none;     width: 96%;     left: 50%;     transform: translateX(-50%);     -webkit-transform: translateX(-50%); 	border-top-right-radius:10px; 	border-top-left-radius:10px; }
+.get-img.new { 	font-size:13px; } input.wpcf7-form-control.wpcf7-text.data-input.newinput {     height: 45px;     margin-top: 0; } textarea.wpcf7-form-control.wpcf7-textarea.data-input.newinput {     height: 65px; }
+.form-top.new {     height: 50px;     padding: 0; } .get-img.new {     margin: -5px 15px;  }
+p.counting {     color: grey;     text-align: right;     margin-top: 5px;     font-size: 14px; 	padding-right:10px; }
+#scrolling {     position:fixed;     right:20px;     bottom:7px;     cursor:pointer;     width:50px;     height:50px;     background-color:#ffcc00;     text-indent:9999px;     display:none;     -webkit-border-radius:60px;     -moz-border-radius:60px;     border-radius:60px;     z-index:9; }
+#scrolling span {     position:absolute;     top:50%;     left:50%;     margin-left:-8px;     margin-top:-12px;     height:0;     width:0;     border:8px solid transparent;     border-bottom-color:#ffffff; }
+#scrolling:hover {     background-color:#545454;     opacity:1;filter:"alpha(opacity=100)";     -ms-filter:"alpha(opacity=100)"; }
+.slider {     background: #ecede8 none repeat scroll 0 0!important; } .service-info ul,.service_info ul,.services_content ul { 	padding-left:0; }
+.content-pages h2.service-name,.content-pages h2.service_name { 	font-size:19px; }
+.services_content li{ color: #000;     font-family: "open sans",sans-serif;     font-size: 13px;     font-weight: 600;     list-style: outside none none;     margin-bottom: 16px;     padding-left: 20px;     position: relative;  }
+.services_content li::before {     border: 3px solid rgb(255, 204, 0);     border-radius: 50%;     content: "";     height: 5px;     left: 0px;     position: absolute;     top: 4px;     width: 5px; }
+h5.below-list{     font-size: 13px;     line-height: inherit;     font-weight: normal;     font-family: "open sans",sans-serif;     color: #000; }
+.bx-controls-direction { display: none!important; } .bx-viewport {     background: #ecede8 none repeat scroll 0 0!important;         padding-bottom: 15px; }
+.bx-wrapper .bx-viewport {     -moz-box-shadow: none!important;     -webkit-box-shadow: none!important;     box-shadow: none!important;     border: 0!important; }
+.bxslider li {     top: 15px !important; }
+#recent-posts-3 ul > li {     padding-bottom: 20px;     border-bottom: 1px solid #494949;     padding-top: 20px;     list-style: none;     margin-left: -40px; }
+#recent-posts-3 h2.widget-title {     font-size: 20px ;     color: #9b9b9b ; }
+/* mp menu css starts */
+/* toggle menu css */
+*, *:after, *::before {     -webkit-box-sizing: border-box;     -moz-box-sizing: border-box;     box-sizing: border-box; }
+.scroller, .scroller-inner {   position: relative; }
+.menu-trigger {   position: relative;   padding-left: 60px;   font-size: 0.9em; }
+.menu-trigger:before {   position: absolute;   top: 2px;   left: 0;   width: 40px;   height: 6px;   background: #fff;   box-shadow: 0 6px #34495e, 0 12px #fff, 0 18px #34495e, 0 24px #fff;   content: ''; }
+.mp-pusher {     position: relative;     left: 0;     height: 100%;     z-index: 9; }
+.mp-menu {   position: absolute; /* we can't use fixed here :( */   top: 0;   left: 0;   z-index: 1;   width: 300px;    height: 100%;   -webkit-transform: translate3d(-100%, 0, 0);   -moz-transform: translate3d(-100%, 0, 0);   transform: translate3d(-100%, 0, 0); } .mp-level h2 {   color: #4a4a4a; }
+.mp-menu ul li > a i {   float: right;   font-size: 18px; } .mp-menu ul li > a .fa.fa-bolt {   color: rgb(255, 102, 0); }
+.mp-level ul li a {   color: #4a4a4a;   font-size: 13px;   text-decoration:none;   font-family: myriad-set-pro_semibold; }
+.mp-level {   position: absolute;   top: 0;   left: 0;   width: 100%;   height: 100%;   background:rgb(247, 249, 249) none repeat scroll 0 0;   -webkit-transform: translate3d(-100%, 0, 0);   -moz-transform: translate3d(-100%, 0, 0);   transform: translate3d(-100%, 0, 0); }
+/* overlays for pusher and for level that gets covered */ .mp-pusher::after, .mp-level::after, .mp-level::before {   position: absolute;   top: 0;   right: 0;   width: 0;   height: 0;   content: '';   opacity: 0; }
+.mp-pusher::after, .mp-level::after {   background: rgba(0,0,0,0.3);   -webkit-transition: opacity 0.3s, width 0.1s 0.3s, height 0.1s 0.3s;   -moz-transition: opacity 0.3s, width 0.1s 0.3s, height 0.1s 0.3s;   transition: opacity 0.3s, width 0.1s 0.3s, height 0.1s 0.3s; }
+.mp-level::after {   z-index: -1; }
+.mp-pusher.mp-pushed::after, .mp-level.mp-level-overlay::after {   width: 100%;   height: 100%;   opacity: 1;   -webkit-transition: opacity 0.3s;   -moz-transition: opacity 0.3s;   transition: opacity 0.3s; }
+.mp-level.mp-level-overlay {   cursor: pointer; } .mp-level.mp-level-overlay.mp-level::before { width: 100%; height: 100%;   background: transparent;   opacity: 1; }
+.mp-pusher, .mp-level {   -webkit-transition: all 0.5s;   -moz-transition: all 0.5s;   transition: all 0.5s; }
+/* overlap */ .mp-overlap .mp-level.mp-level-open {   box-shadow: 1px 0 2px rgba(0,0,0,0.2);   -webkit-transform: translate3d(-40px, 0, 0);   -moz-transform: translate3d(-40px, 0, 0);   transform: translate3d(-40px, 0, 0); }
+/* First level */ .mp-menu > .mp-level, .mp-menu > .mp-level.mp-level-open, .mp-menu.mp-overlap > .mp-level, .mp-menu.mp-overlap > .mp-level.mp-level-open {   box-shadow: none;   -webkit-transform: translate3d(0, 0, 0);   -moz-transform: translate3d(0, 0, 0);   transform: translate3d(0, 0, 0); }
+/* cover */ .mp-cover .mp-level.mp-level-open {   -webkit-transform: translate3d(0, 0, 0); -moz-transform: translate3d(0, 0, 0);   transform: translate3d(0, 0, 0); }
+.mp-cover .mp-level.mp-level-open > ul > li > .mp-level:not(.mp-level-open) {   -webkit-transform: translate3d(-100%, 0, 0);   -moz-transform: translate3d(-100%, 0, 0);   transform: translate3d(-100%, 0, 0); }
+/* content style */ .mp-menu ul {   margin: 0;   padding: 0;   list-style: none; }
+.mp-menu h2 {   margin: 0;   padding: 1em;   text-shadow: 0 0 1px rgba(0,0,0,0.1);   font-weight: 300;   font-size: 2em; }
+.mp-menu.mp-overlap h2::before {   position: absolute;   top: 0;   right: 0;   margin-right: 8px;   font-size: 75%;   line-height: 1.8;   opacity: 0;   -webkit-transition: opacity 0.3s, -webkit-transform 0.1s 0.3s;   -moz-transition: opacity 0.3s, -moz-transform 0.1s 0.3s;   transition: opacity 0.3s, transform 0.1s 0.3s;   -webkit-transform: translateX(-100%);   -moz-transform: translateX(-100%);   transform: translateX(-100%); }
+.mp-menu.mp-cover h2 {   text-transform: uppercase;   font-weight: 700;   letter-spacing: 1px;   font-size: 1em; }
+.mp-overlap .mp-level.mp-level-overlay > h2::before {   opacity: 1;   -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;   -moz-transition: -moz-transform 0.3s, opacity 0.3s;   transition: transform 0.3s, opacity 0.3s;   -webkit-transform: translateX(0);   -moz-transform: translateX(0);   transform: translateX(0); }
+.mp-menu ul li > a {   display: block;   padding: 0.7em 1em 0.7em 1.8em;   outline: none;   box-shadow: inset 0 -1px rgba(0,0,0,0.2);   text-shadow: 0 0 1px rgba(255,255,255,0.1);   -webkit-transition: background 0.3s, box-shadow 0.3s;   -moz-transition: background 0.3s, box-shadow 0.3s;   transition: background 0.3s, box-shadow 0.3s; }
+.mp-menu ul li::before {   position: absolute;   left: 10px;   z-index: -1;   color: rgba(0,0,0,0.2);   line-height: 3.5; }
+.mp-level > ul > li:first-child > a {   box-shadow: inset 0 -1px rgba(0,0,0,0.2), inset 0 1px rgba(0,0,0,0.2); }
+.mp-menu ul li a:hover, .mp-level > ul > li:first-child > a:hover {   background: rgba(0,0,0,0.2);   box-shadow: inset 0 -1px rgba(0,0,0,0); }
+.mp-menu .mp-level.mp-level-overlay > ul > li > a, .mp-level.mp-level-overlay > ul > li:first-child > a {   box-shadow: inset 0 -1px rgba(0,0,0,0); }
+.mp-level > ul > li:first-child > a:hover, .mp-level.mp-level-overlay > ul > li:first-child > a {   box-shadow: inset 0 -1px rgba(0,0,0,0), inset 0 1px rgba(0,0,0,0); } /* seems like Chrome 34.0.1847.131 needs the second shadow otherwise the transition breaks */
+.mp-back {   background: rgba(0,0,0,0.1);   outline: none;   color: #fff;   text-transform: uppercase;   letter-spacing: 1px;   font-weight: 700;   display: block;   font-size: 0.8em;   padding: 1em;   position: relative;   box-shadow: inset 0 1px rgba(0,0,0,0.1);   -webkit-transition: background 0.3s;   -moz-transition: background 0.3s;   transition: background 0.3s; }
+.mp-back::after {   position: absolute;   right: 10px;   font-size: 1.3em;   color: rgba(0,0,0,0.3); }
+.mp-menu .mp-level.mp-level-overlay > .mp-back, .mp-menu .mp-level.mp-level-overlay > .mp-back::after { background: transparent; box-shadow: none; color: transparent; }
+/* Fallback example for browsers that don't support 3D transforms (and no JS fallback) */
+/* We'll show the first level only */ .no-csstransforms3d .mp-pusher, .no-js .mp-pusher {   padding-left: 300px; }
+.no-csstransforms3d .mp-menu .mp-level, .no-js .mp-menu .mp-level {   display: none; }
+.no-csstransforms3d .mp-menu > .mp-level, .no-js .mp-menu > .mp-level {   display: block; } #mob-app { height: 2103px; } .site-footer { box-shadow: 0 2px 5px 1px; }
+.copyright_mob li { list-style: none; display: inline-block; margin:0px 2px; } .copyright_mob li a {color: #6a6a6a; text-decoration: none; } .copyright_mob ul {   padding: 0;} /* toggle menu css end */ /* mp menu css ends */
+/* landscape */
+@media only screen and (max-width: 767px) {
+  .footer {
+    height: auto;
+  }
+  .footer ul{
+    text-align: center;
+    margin-left: 0;
+    padding-left: 0;
+    float: none;
+     bottom: 0;
+  width: 100%;
+  height: 2.5rem;  
+  }
+  .footer li{
+    display: inline-block;
+    margin: 0 5px;
+  }
+  
+ 
+ }
+@media screen and (min-width : 736px) and (max-width: 767px){ .mp-menu ul li div > ul >li > div > ul > li > a { padding: 0.7em 1em 0.5em 1.8em; }     .height_of_menu {     height: 255px !important;   }  }
+@media screen and (min-width : 667px) and (max-width: 735px){ .mp-menu ul li div > ul >li > div > ul > li > a {        padding: 0.5em 1em 0.35em 1.8em;     }     .height_of_menu {     height: 260px !important;   } }
+@media screen and (min-width : 567px) and (max-width: 666px){ .height_of_menu {     height: 210px !important;   } } 
+@media screen and (min-width : 480px) and (max-width: 568px){   .mp-menu ul li div > ul >li > div > ul > li > a {        padding: 0.2em 1em 0.2em 1.8em;     }     .height_of_menu {     height: 180px !important;   } }
+/* portrait */
+@media only screen and (max-width:414px) and (min-width:376px) {  .height_of_menu {     height: 570px !important;   } }
+@media only screen and (max-width:412px) and (min-width:376px) {  .height_of_menu {     height: 590px !important;   } }
+@media only screen and (max-width:375px) and (min-width:361px) {  .height_of_menu {     height: 495px !important;   } }
+@media only screen and (max-width:360px) and (min-width:321px) {  .height_of_menu {     height: 500px !important;     overflow-y: hidden!important;   } }
+@media only screen and (max-width:320px) {  .height_of_menu {     height: 320px !important;   } }
+@media screen and (min-width: 320px) { .slider h1 { color: #333; font-family: myriad-set-pro-bold; font-size: 34px; margin-bottom: 0; margin-top: 0px;     padding-top: 13px; } .slider h3 { color: #333; font-family: "Raleway", sans-serif; font-size: 16px; font-weight: 600; margin-bottom: 40px; margin-top: 0; }
+.slider {  margin-top: 60px; padding: 0 20px;     }
+.slider a {     background: #ffcc00 none repeat scroll 0 0;     border: medium none;     border-radius: 5px;     box-shadow: 3px 4px 1px 1px rgba(0, 0, 0, 0.12);     color: #4a4a4a;     display: inline-block;     font-family: MavenProBlack;     text-transform: uppercase;     font-size: 16px;     border: 3px solid #ffcc00;     font-weight: 400;     margin: 0px 2% 35px 0;     padding: 10px 20px;     text-align: center;     text-decoration: none;     transition: all 0.3s ease-out 0s;     -webkit-transition: all 0.3s ease-out 0s;     -moz-transition: all 0.3s ease-out 0s;     -ms-transition: all 0.3s ease-out 0s;     width: 36%; }
+.logo { background-image: url("/wp-content/themes/tbimob/images/logo.png");  background-position: center center; background-repeat: no-repeat; background-size: 100% auto; display: block; height: 43px; margin: 0 auto; vertical-align: middle; width: 262px; }
+/*.navigation { /* background-image: url("/wp-content/themes/tbimob/images/tbi_banner_shadow.png");  background-repeat: repeat-x; background-position: center top;  background-size: contain; position: fixed; top: 59px; height: 60px; width: 100%; z-index: 9999; padding: 10px 0px; background-color: #000; }*/
+.nav_buton { cursor: pointer; display: inline-block; float: none; height: 20px; left: 23px; position: relative; top: 0px; vertical-align: middle; width: 23px;  }
+.line { background: #fff none repeat scroll 0 0; height: 4px; position: absolute; width: 100%; } .line.one { top: 0; }
+.line.two { top: 50%; transform: translateY(-50%); -MOZ-transform: translateY(-50%); -webkit-transform: translateY(-50%); } .line.three {  bottom: 0; }
+.slider { margin: 60px auto 0; max-width: 736px; } #greyheader { background: #ecede8 none repeat scroll 0 0; float: left; margin-top: 0; width: 100%; }
+/*footer { background: #fff none repeat ; color: #5e5e5e; font-family: myriad-set-pro-thin; /*padding: 40px 25px;*/ }
+/*footer .address { background: rgba(0, 0, 0, 0) url("") no-repeat scroll left 5px; display: block; font-size: 16px; line-height: 25px; padding: 0px 0 30px 50px; } footer a { color: #5e5e5e;  font-family: myriad-set-pro; line-height: 20px; text-decoration: none; }
+footer .phone { background: rgba(0, 0, 0, 0) url("") no-repeat scroll left 5px;         font-size: 16px;         line-height: 20px; padding: 0px 0 30px 50px; } .phone > ul { margin: 0; list-style: outside none none; padding: 0; } .phone li { margin: 2px 0; }
+footer .contact {         background: rgba(0, 0, 0, 0) url("") no-repeat scroll left top;         font-size: 14px;         line-height: 20px;         padding: 2px 0 30px 50px;     }
+.latest-posts > h2 {         color: #9b9b9b;         font-size: 16px;         margin-bottom: 23px;     }
+.divider {         background: #494949 none repeat scroll 0 0;         display: block;         height: 1px;         margin: 22px 0;         width: 100%;     }
+footer { color: #5e5e5e; font-family: myriad-set-pro-thin; box-shadow: 6 2px 5px 1px; -webkit-box-shadow: 6 2px 5px 1px;     float: left;     width: 100%; }
+.footer-base { background: #1f1f1f none repeat ; color: #5e5e5e; font-family: myriad-set-pro; font-size: 14px;         padding: 38px 0;clear:both;         text-align: center;     }     .social_icons {         margin: 0;         padding: 0;  }
+.social_icons li {         display: inline-block;         list-style: outside none none;         margin: 13px 0 0;     }
+.social_icons a {         background: rgba(0, 0, 0, 0) url("/wp-content/themes/tbimob/images/social1.png") no-repeat scroll 0 0;         display: inline-block;         height: 28px;         width: 32px;     }
+.icon-second > a { background-position: -38px -3px; } .icon-third > a { background-position: -73px -3px; }
+.icon-first a { background-position: -8px -3px; } .icon-fourth > a { background-position: -113px -3px; }
+.icon-fifth > a { background-position: -153px -3px; } .home.page .navigation.nav_white {
+    background: #fff!important;
+}*//*.navigation.nav_white { background: rgb(247, 249, 249) none repeat scroll 0 0;     }
+.ms-bullets.ms-dir-h { bottom: 46px!important;  opacity: 1!important; } .ms-bullet {        float: none!important;     display: inline-block!important; }
+.ms-skin-default .ms-bullet {     width: 8px!important;     height: 8px!important; 	vertical-align:middle;     background: #ffcc00!important;     margin: 4px;      border-radius: 50%; } .ms-skin-default .ms-bullet-selected {     background: #ffcc00!important; 	width:12px!important;height:12px!important;  }
+.ms-bullets.ms-dir-h {     position: absolute;     bottom: 30px!important;     right: 50%;     width: 100px!important;     display: block!important;     opacity: 1!important;     width: 67px!important; }*/
+.navigation.nav_white .logo {         /*background-image: url("/wp-content/themes/tbimob/images/logo_black.png");       background-position: center center;         background-repeat: no-repeat;         background-size: 100% auto;     } */ 
+.nav_white .line { background: #000 none repeat scroll 0 0; } .social_icons li.icon-fourth { margin: 13px 9px 0 3px; } .social_icons li.icon-third {         margin: 13px 6px 0 !important; } .slider .bx-wrapper a { box-shadow: none; padding: 0; }
+ /*   // .slider .bx-viewport { // height: 335px !important; // } */ .buttons-slider { text-align: center; } .slider amp-img { display: block; margin: 0 auto;    } }
+@media screen and (max-width:479px) and (min-width: 375px) {     .slider .bx-wrapper amp-img {         max-width: 335px;     }     /* // .slider .bx-viewport {         // height: 316px !important;     // } */ }
+@media screen and (max-width: 375px) {     .slider amp-carousel {         height: 507px;     }     .slider a {         display: block;         font-size: 19px;         margin: 10px 0;         padding: 10px;         width: auto;     }     .slider amp-carousel amp-img {         max-width: 290px;     } }
+@media screen and (max-width: 389px) { .slider amp-carousel { height: 475px; } .slider a { display: block; font-size: 19px;  margin: 20px 0;         padding: 10px;         width: auto;     }     .slider { padding-bottom: 20px; } .nav_buton { height: 18px; width: 20px;     }     .logo {         width: 211px;     } }
+@media screen and (min-width: 480px) { .wrapper-mob {  margin: 0 auto;         max-width: 438px;     }     .slider amp-img {         width: 428px;     } }
+@media screen and (min-width: 568px) {     .wrapper-mob {         margin: 0 auto;  max-width: 513px;     }  } @media screen and (min-width: 654px) {   }
+#get-started form {     position: relative; }
+div.wpcf7 .ajax-loader {     width: 53px!important;     height: 53px!important;     margin: 0!important;     position: absolute;     top: 50%;     transform: translateY(-50%) translateX(-50%);     -webkit-transform: translateY(-50%) translateX(-50%);     -ms-transform: translateY(-50%) translateX(-50%);     -moz-transform: translateY(-50%) translateX(-50%);     left: 50%; } #get-started1 form {     position: relative; }
+.wpcf7-form-control.g-recaptcha.wpcf7-recaptcha.capcta_mob_home { transform: scale(0.7); -webkit-transform: scale(0.7); -moz-transform: scale(0.7); position: relative;	left: -2%; } video { width: 90%; margin: 0px auto; 		display: block; }
+.wpcf7-form-control.g-recaptcha.wpcf7-recaptcha.capcta_mob_career,.wpcf7-form-control.g-recaptcha.wpcf7-recaptcha.capcta_mob_cotact { 	    transform: scale(0.7); 	    -webkit-transform: scale(0.7); 	    -moz-transform: scale(0.7); 		position: relative; 		left: -2%; }
+.attach .wpcf7-not-valid-tip{     position: absolute;     width: 200px; }
+.ms-slide-info {     position: absolute !important;     top: 50%;     transform: translateY(-50%);     -webkit-transform: translateY(-50%); }
+.content-section-banner h2{ 	  font-family: MavenProBlack;     font-size: 30px;color: #f5f5f5;     text-align: left;     text-transform: uppercase; }
+.banner_content_txt {   color: #f5f5f5;   font-family: mavenproregular;   font-size: 18px;   font-weight: normal;   text-align: left; }
+a.lg_button {     background: #f27229 none repeat scroll 0 0;     border: medium none;     border-radius: 5px;     box-shadow: 3px 4px 1px 1px rgba(0,0,0,0.12);     color: #2a3642;     cursor: pointer;     display: inline-block;     font-family: mavenproblack;     font-size: 17px;     height: 44px;     line-height: 47px;     margin-right: 0;     padding: 0 22px;     text-align: center;     text-decoration: none;     text-transform: uppercase;     transition: all 0.3s ease-out 0s;     -webkit-transition: all 0.3s ease-out 0s;     vertical-align: top;     width: auto;     border: 3px solid #f27229;     margin-top: 18px; }
+.ms-skin-default .ms-nav-next, .ms-skin-default .ms-nav-prev {      left: 0px!important;  }
+.ms-skin-default .ms-nav-next {     right: 0px!important; 	left:auto!important;   }
+#xplore_btn {   background: rgba(0, 0, 0, 0) none repeat scroll 0 0;   border: 3px solid;   color: #f5f5f5;   line-height: 42px;   margin-right:12px; }
+.content-section-banner { 	padding:0 25px; }
+@media screen and (max-width: 414px) { a.lg_button {     background: #f27229 none repeat scroll 0 0;     border: medium none;     border-radius: 5px;     box-shadow: 3px 4px 1px 1px rgba(0,0,0,0.12);     color: #2a3642;     cursor: pointer;     display: inline-block;     font-family: mavenproblack;     font-size: 17px;     height: 44px;     line-height: 47px;     margin-right: 0;     padding: 0 22px;     text-align: center;     text-decoration: none;     text-transform: uppercase;     transition: all 0.3s ease-out 0s;     -webkit-transition: all 0.3s ease-out 0s;     vertical-align: top;     width: 80%;     border: 3px solid #f27229;     margin-top: 18px; }
+#xplore_btn {   background: rgba(0, 0, 0, 0) none repeat scroll 0 0;   border: 3px solid;   color: #f5f5f5;   line-height: 42px;   margin-right:0px; } }
+div.wpcf7 {     position: relative; }
+.wpcf7-response-output.wpcf7-display-none {         position: absolute;     top: 50%;left:50%;width:85%; 	transform:translateX(-50%) translateY(-50%); 	-webkit-transform:translateX(-50%) translateY(-50%);     background: #fff; }
+.wpcf7-response-output.wpcf7-mail-sent-ok {     position: absolute;     background: #0D3D60;     top: 50%;left:50%;width:85%; 	transform:translateX(-50%) translateY(-50%); 	-webkit-transform:translateX(-50%) translateY(-50%);     display: block!important;     z-index: 2;     color: #fff;     padding: 16px;border:none;     border-radius: 10px; } span.wpcf7-not-valid-tip {     font-size: 12px; } .wpcf7-form-control-wrap {     position: relative;     float: left; }
+.wpcf7-form span.wpcf7-not-valid-tip { font-size: 12px; bottom: 0; } .wpcf7-response-output.wpcf7-display-none { 	z-index:99; } .home .mp-menu {      top: 60px; }
+/* header, footer css end here */ /*.offer-strip {     background: rgba(0, 0, 0, 0) url(/wp-content/themes/TBI/images/offer-strip.jpg) no-repeat scroll center top / cover !important;     left: 0;     position: fixed;     text-align: center;     top: 0;     width: 100%;     z-index: 9999;     height: 60px; }*/
+.offer-strip { 
+	  height:60px !important;
+	}
+.offer-strip-main {     color: #2a3642;     font-family: "open sans",sans-serif;     font-size: 10px;     font-weight: 600;     padding: 10px 20px;     position: absolute;     top: 50%;     transform: translateY(-50%) translateX(-50%);     -WEBKIT-transform: translateY(-50%) translateX(-50%);     LEFT: 50%;     WIDTH: 100%; }
+.offer-strip-main > a {
+    background: #2a3642 none repeat scroll 0 0;
+    border-radius: 10px;
+    color: #ffffff;
+    display: inline-block;
+    margin-left: 10px;
+    padding: 4px 3px;
+    text-decoration: none;
+    vertical-align: middle;
+    width: 95px;
+    margin-top: 5px;
+	    line-height: 15px;
+}
+.banner-pages,.banner.inner_banner.hire-magento {     margin-top: 60px; } .home .slider {     margin-top: 60px!important; }
+
+.page-template-hire-magento .mp-menu.mp-cover.height_of_menu ,
+.page-template-PSDtoBigCommerce .mp-menu.mp-cover.height_of_menu,
+.page-template-tpl-shopify-design-development-services .mp-menu.mp-cover.height_of_menu,
+.page-template-bigcommerce-design-development-services .mp-menu.mp-cover.height_of_menu,
+.page-template-tpl-psd-to-magento .mp-menu.mp-cover.height_of_menu,
+.page-template-tpl-psd-to-shopify .mp-menu.mp-cover.height_of_menu,
+.page-template-hire-bigcommerce-developer .mp-menu.mp-cover.height_of_menu,
+.page-template-tpl-magento-development-company .mp-menu.mp-cover.height_of_menu,
+.page-template-PSDtoBigCommerce .mp-menu.mp-cover.height_of_menu,
+.page-template-hire-woocommerce-developer .mp-menu.mp-cover.height_of_menu,
+.page-template-hire-wordpress-developer .mp-menu.mp-cover.height_of_menu
+{
+    margin-top: -45px !important;
+}
+
+.page-template-Shopify-migration-integration-services nav#mp-menu {
+    top: 17px;
+}
+.mp-level{
+	top: 30px;
+}
+.page-template-Hire-shopify .mp-menu.mp-cover,
+{
+    margin-top: -45px;
+}
+.mp-menu ul {
+	margin-top: 64px;
+}
+@media screen and (min-width: 320px){
+.nav_white .line {
+    background: #000 none repeat scroll 0 0;
+}
+
+	.home.page.page-template-home .logo {
+    background-position: left 2px;
+}
+}
+@media screen and (min-width: 320px){
+.line.one {
+    top: 0;
+}
+.line.two {
+	top: 50%;
+    transform: translateY(-50%);
+    -MOZ-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+	}
+	.line.three {
+    bottom: 0;
+}
+@media screen and (min-width: 320px){
+.line {
+    background: #fff none repeat scroll 0 0;
+    height: 4px;
+    position: absolute;
+    width: 100%;
+}
+}
+</style>
+	<script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>
+
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.brihaspatitech.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.6.11"}};
+			!function(a,b,c){function d(a){var c,d,e,f,g,h=b.createElement("canvas"),i=h.getContext&&h.getContext("2d"),j=String.fromCharCode;if(!i||!i.fillText)return!1;switch(i.textBaseline="top",i.font="600 32px Arial",a){case"flag":return i.fillText(j(55356,56806,55356,56826),0,0),!(h.toDataURL().length<3e3)&&(i.clearRect(0,0,h.width,h.height),i.fillText(j(55356,57331,65039,8205,55356,57096),0,0),c=h.toDataURL(),i.clearRect(0,0,h.width,h.height),i.fillText(j(55356,57331,55356,57096),0,0),d=h.toDataURL(),c!==d);case"diversity":return i.fillText(j(55356,57221),0,0),e=i.getImageData(16,16,1,1).data,f=e[0]+","+e[1]+","+e[2]+","+e[3],i.fillText(j(55356,57221,55356,57343),0,0),e=i.getImageData(16,16,1,1).data,g=e[0]+","+e[1]+","+e[2]+","+e[3],f!==g;case"simple":return i.fillText(j(55357,56835),0,0),0!==i.getImageData(16,16,1,1).data[0];case"unicode8":return i.fillText(j(55356,57135),0,0),0!==i.getImageData(16,16,1,1).data[0];case"unicode9":return i.fillText(j(55358,56631),0,0),0!==i.getImageData(16,16,1,1).data[0]}return!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i;for(i=Array("simple","flag","unicode8","diversity","unicode9"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+
+</style>
+
+
+<!--script type='text/javascript' src='/assets/ap.js'></script-->
+<%= javascript_include_tag "ap.js" %>
+<!--script type='text/javascript' src='/assets/modernizr.custom.js'></script-->
+<%= javascript_include_tag "modernizr.custom.js" %>
+
+
+
+<script type='text/javascript' src='/assets/Advanced_lazyload.js'></script>
+<!--%= javascript_include_tag "Advanced_lazyload.js" %-->
+
+<!--[if lt IE 9]>
+<script type='text/javascript' src='https://www.brihaspatitech.com/wp-content/themes/twentysixteen/js/html5.js?ver=3.7.3'></script>
+<![endif]-->
+
+
+<style>.ms-parent-id-2 > .master-slider{ background:#000000 url( https://www.brihaspatitech.com/wp-content/uploads/2017/06/web-marketing-strategies.jpg ) repeat top left; }
+.ms-parent-id-1 > .master-slider{ background:#000000 url( https://www.brihaspatitech.com/wp-content/uploads/2017/06/web-marketing-strategies.jpg ) repeat top left; }</style>
+<!--script>var ms_grabbing_curosr = 'https://www.brihaspatitech.com/wp-content/plugins/master-slider/public/assets/css/common/grabbing.cur', ms_grab_curosr = 'https://www.brihaspatitech.com/wp-content/plugins/master-slider/public/assets/css/common/grab.cur';</script>
+<meta name="generator" content="MasterSlider 3.0.1 - Responsive Touch Image Slider | www.avt.li/msf" />
+<script type="text/javascript">
+(function(url){
+	if(/(?:Chrome\/26\.0\.1410\.63 Safari\/537\.31|WordfenceTestMonBot)/.test(navigator.userAgent)){ return; }
+	var addEvent = function(evt, handler) {
+		if (window.addEventListener) {
+			document.addEventListener(evt, handler, false);
+		} else if (window.attachEvent) {
+			document.attachEvent('on' + evt, handler);
+		}
+	};
+	var removeEvent = function(evt, handler) {
+		if (window.removeEventListener) {
+			document.removeEventListener(evt, handler, false);
+		} else if (window.detachEvent) {
+			document.detachEvent('on' + evt, handler);
+		}
+	};
+	var evts = 'contextmenu dblclick drag dragend dragenter dragleave dragover dragstart drop keydown keypress keyup mousedown mousemove mouseout mouseover mouseup mousewheel scroll'.split(' ');
+	var logHuman = function() {
+		var wfscr = document.createElement('script');
+		wfscr.type = 'text/javascript';
+		wfscr.async = true;
+		wfscr.src = url + '&r=' + Math.random();
+		(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(wfscr);
+		for (var i = 0; i < evts.length; i++) {
+			removeEvent(evts[i], logHuman);
+		}
+	};
+	for (var i = 0; i < evts.length; i++) {
+		addEvent(evts[i], logHuman);
+	}
+})('//www.brihaspatitech.com/?wordfence_logHuman=1&hid=007C879BC4F88D314C30C373111865A5');
+</script-->	
+	<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+		<meta name="generator" content="Powered by Visual Composer - drag and drop page builder for WordPress." />
+<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="https://www.brihaspatitech.com/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css" media="screen"><![endif]--><!--[if IE  8]><link rel="stylesheet" type="text/css" href="https://www.brihaspatitech.com/wp-content/plugins/js_composer/assets/css/vc-ie8.min.css" media="screen"><![endif]-->
+
+<noscript><style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript>	
+	<body class="home page page-id-24 page-template page-template-home page-template-home-php _masterslider _ms_version_3.0.1 group-blog wpb-js-composer js-comp-ver-4.11.1 vc_responsive">
+			
+					<div class="offer-strip">
+										<!--div class="offer-strip-main">
+												Start Small with our 1 Day Free Trial work . We offer Expertise Ecommerce Solutions!
+													<a target="_blank" href="/contact/" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Get Started Button- Announcement Bar - Header&#039;,&#039;click&#039;)">Get Started</a>
+										</div-->				
+						</div>
+
+					   <div class="header" id="greyheader">
+							              <div class="navigation nav_white">
+							                <a href="/" class="logo"></a>
+							                <div class="nav_buton" id="trigger">
+							                  <div class="line one"></div>
+							                  <div class="line two"></div>
+							                  <div class="line three"></div>
+							                </div>
+							              </div>
+							              
+			            </div>   
+            
+
+        			<div class="mp-pusher" id="mp-pusher">
+
+				            		<nav id="mp-menu" class="mp-menu">
+                    <div class="mp-level">
+                        <!-- <h2 class="icon icon-world">Menu</h2> -->
+			                        <ul>
+			                            <li><a class="" href="/">Home</a></li>
+			                            <li class="">
+			                                <a>Services <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+			                                <div class="mp-level">
+			                                    <a class="mp-back" href="#"><i class="fa fa-angle-left" aria-hidden="true"></i> back</a>
+			                                    <h2 class=""><a>Services</a></h2>
+			                                    <ul >
+			                                        <li class="">   
+			                                            <a>Development <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+			                                            <div class="mp-level">
+			                                                
+			                                                <a class="mp-back" href="#"><i class="fa fa-angle-left" aria-hidden="true"></i> back</a>
+			                                                <h2><a>Development</a></h2>
+			                                                <ul>  
+			                                                    <li><a href="/application-development"><i class="fa fa-bolt" aria-hidden="true"></i> Application Development</a></li>
+			                                                    <li><a href="/bigdata">Big Data</a></li>
+			                                                    <li><a href="/data-warehousing-and-business">Data Warehousing and business</a></li>
+			                                                    <li><a href="/data-and-information-management">Data and infromation management</a></li>
+			                                                    <li><a href="/cloud-and-infrastructure-service">Cloud and Infrastructure</a></li>    
+			                                                </ul>
+			                                            </div>
+			                                        </li>
+			                                        <li class="">
+			                                            <a class="" href="">Mobile Development <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+			                                            <div class="mp-level">                                              
+			                                                <a class="mp-back" href="#"><i class="fa fa-angle-left" aria-hidden="true"></i> back</a>
+			                                                <h2><a class="" href="/mobile-app-dev">Mobile Development</a></h2>
+			                                                <ul>
+			                                                    <li><a href="/mobile-app-dev">Android Development</a></li>
+			                                                    <li><a href="/mobile-app-dev">iOS App Development</a></li>
+			                                                </ul>
+			                                            </div>
+			                                        </li>         
+			                                        <li class="">
+			                                            <a>CMS Development <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+			                                            <div class="mp-level">
+			                                                
+			                                                <a class="mp-back" href="#"><i class="fa fa-angle-left" aria-hidden="true"></i> back</a>
+			                                                <h2><a>CMS Development</a></h2>
+			                                                <ul>
+			                                                    <li><a href="/cms"><i class="fa fa-bolt" aria-hidden="true"></i> WordPress</a></li>               
+			                                                </ul>
+			                                            </div>
+			                                        </li>
+			                                        <li class="">
+			                                            <a>E-commerce Development <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+			                                            <div class="mp-level">
+			                                                <a class="mp-back" href="#"><i class="fa fa-angle-left" aria-hidden="true"></i> back</a>
+			                                                <h2><a class="" href="/ecommerce">E-commerce Development</a></h2>
+			                                                <ul>
+			                                                    <li><a href="/ecommerce/woocommerce">WooCommerce</a></li>
+			                                                    <li><a href="/ecommerce/shopify">Shopify</a></li>
+																<li><a href="/ecommerce/magento">Magento</a></li> 
+			                                                </ul>
+			                                            </div>
+			                                        </li>
+			                                        <li class="">
+			                                <a>Adv. JavaScript<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+			                                <div class="mp-level">
+			                                    <a class="mp-back" href="#"><i class="fa fa-angle-left" aria-hidden="true"></i> back</a>
+			                                    <h2 class=""><a class="">Adv. JavaScript</a></h2>
+			                                        <ul>
+			                                                    <li><a href="/nodejs">NodeJs</a></li>
+			                                                    <li><a href="/reactjs">ReactJs</a></li>
+			                                                    
+			                                        </ul>
+			                                </div>
+			                            </li>
+			                                    </ul>
+			                                </div>
+			                            </li>
+			                           
+			                            <li><a class="" href="/portfolio/">Portfolio</a></li>
+			                            <li><a class="" href="/about-us/">About Us</a></li>
+			                            <li><a class="" href="/careers/">Careers</a></li>
+			                            <li><a class="" href="/blogs/">Blog</a></li>
+			                            <li><a class="" href="/contact/">Contact Us</a></li>
+			                        </ul>
+                    </div>
+                </nav>
+    		
+            
+			               <!--Home page slider-->
+             <div class="sliderblock">
+       	<div class="fadeOut owl-carousel owl-theme">
+								<div class="item" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(&#039; /assets/1.jpg &#039;);">
+					
+					
+<div class="container-fluid">
+<div class="row">
+					
+					<div class="col-md-12 mobHead">
+						<div class="content-section-banner1">
+						<div class="content-section-banner">
+						<h2>Web <span>Solutions</span> to amplify your business. </h2>
+						<div class="banner_content_txt">
+							Result driven and user friendly web applications for Startups, Agencies and Enterprises.						
+						</div>
+						<div class="bannerbtns">
+						<a id="xplore_btn" class="lg_button animated fadeInUp Explore-our-Work-Home" href="/" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Explore Our Work&#039;,&#039;click&#039;);">Explore our work</a>
+						<a id="request_btn" class="lg_button animated fadeInUp ddd Get-in-Touch-Home" href="#scroll-form" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Get In touch&#039;,&#039;click&#039;);">Get in Touch</a>
+						<!--<button class="lg_button animated fadeInUp" id="xplore_btn" onclick="location.href = ''"><?php// echo $btn2_text; ?></button> -->
+						
+						</div></div></div>
+					</div></div></div></div>
+					
+					<!--<div class="col-md-6 image-section-banner"><img src=""/></div>	-->
+							
+				
+								<div class="item" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(&#039; /assets/1.jpg &#039;);">
+					
+					
+<div class="container-fluid">
+<div class="row">
+					
+					<div class="col-md-12 mobHead">
+						<div class="content-section-banner1">
+						<div class="content-section-banner">
+						<h2>Web <span>Solutions</span> to amplify your business. </h2>
+						<div class="banner_content_txt">
+							Innovative and tailor made mobile applications to boost your business.						</div>
+						<div class="bannerbtns">
+						<a id="xplore_btn" class="lg_button animated fadeInUp Explore-our-Work-Home" href="/" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Explore Our Work&#039;,&#039;click&#039;);">Explore our work</a>
+						<a id="request_btn" class="lg_button animated fadeInUp ddd Get-in-Touch-Home" href="#scroll-form" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Get In touch&#039;,&#039;click&#039;);">Get in Touch</a>
+						<!--<button class="lg_button animated fadeInUp" id="xplore_btn" onclick="location.href = ''"><?php// echo $btn2_text; ?></button> -->
+						
+						</div></div></div>
+					</div></div></div>
+					
+					<!--<div class="col-md-6 image-section-banner"><img src=""/></div>	-->
+				</div>    				
+				
+								<div class="item" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(&#039; /assets/3.jpg &#039;);">
+					
+
+
+<div class="container-fluid">
+<div class="row">
+					
+					<div class="col-md-12 mobHead">
+						<div class="content-section-banner1">
+						<div class="content-section-banner">
+						<h2>Web <span>Solutions</span> to amplify your business. </h2>
+						<div class="banner_content_txt">
+							Tried and tested Web Marketing Strategies that guarantees increase in organic user traffic.						
+						</div>
+						<div class="bannerbtns">
+						<a id="xplore_btn" class="lg_button animated fadeInUp Explore-our-Work-Home" href="/" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Explore Our Work&#039;,&#039;click&#039;);">Explore our work</a>
+						<a id="request_btn" class="lg_button animated fadeInUp ddd Get-in-Touch-Home" href="#scroll-form" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Get In touch&#039;,&#039;click&#039;);">Get in Touch</a>
+						<!--<button class="lg_button animated fadeInUp" id="xplore_btn" onclick="location.href = ''"><?php// echo $btn2_text; ?></button> -->
+						
+						</div></div></div>
+					</div></div></div>
+					<!--script>
+		(function ( $ ) {
+			"use strict";
+
+			$(function () {
+				var masterslider_b21f = new MasterSlider();
+
+				// slider controls
+				masterslider_b21f.control('bullets'    ,{ autohide:true, overVideo:true, dir:'h', align:'bottom' , margin:10  });
+
+				masterslider_b21f.control('slideinfo'  ,{ autohide:false, overVideo:true, dir:'h', align:'bottom',inset:false , margin:10   });
+				// slider setup
+				masterslider_b21f.setup("MS5c8a1595db21f", {
+						width           : 1470,
+						height          : 748,
+						minHeight       : 600,
+						space           : 0,
+						start           : 1,
+						grabCursor      : true,
+						swipe           : true,
+						mouse           : true,
+						layout          : "fullwidth",
+						wheel           : false,
+						autoplay        : true,
+						instantStartLayers:false,
+						loop            : true,
+						shuffle         : false,
+						preload         : 0,
+						heightLimit     : true,
+						autoHeight      : false,
+						smoothHeight    : true,
+						endPause        : false,
+						overPause       : true,
+						fillMode        : "fill",
+						centerControls  : true,
+						startOnAppear   : false,
+						layersMode      : "center",
+						hideLayers      : false,
+						fullscreenMargin: 0,
+						speed           : 20,
+						dir             : "h",
+						parallaxMode    : 'swipe',
+						view            : "fade"
+				});
+
+				
+				window.masterslider_instances = window.masterslider_instances || [];
+				window.masterslider_instances.push( masterslider_b21f );
+			 });
+
+		})(jQuery);
+		</script-->
+
+					
+					<!--<div class="col-md-6 image-section-banner"><img src=""/></div>	-->
+				</div>    				
+				
+							</div>
+              <!--  slider ends -->
+
+    
+    	</div>
+    </div>
+	<!-- css for home page  -->
+
+
+<!-- home page content starts here  -->
+
+	<style>
+	@media screen and (max-width: 767px) and (min-width: 480px) {
+		
+		.mp-menu.mp-cover {
+			height: 280px;
+		}
+		.mp-menu ul li > a {
+			padding: 0.5em 1em 0.5em 1.8em;
+		}
+	}
+	.col-md-12.mobHead{
+		margin-top: 73px;
+	}
+	</style>
+
+		<!--script src="https://www.brihaspatitech.com/wp-content/themes/tbimob/js/mp/classie.js"></script-->
+		<%= javascript_include_tag "classie.js" %>
+		<!--script src="https://www.brihaspatitech.com/wp-content/themes/tbimob/js/mp/mlpushmenu.js"></script-->
+		<%= javascript_include_tag "mlpushmenu.js" %>
+		<script>
+			new mlPushMenu( document.getElementById( 'mp-menu' ), document.getElementById( 'trigger' ), {
+				type : 'cover'
+			} );
+		</script>
+
+		<script> 
+			// (function($){
+				// $(window).scroll(function() {    
+					// var scroll = $(window).scrollTop();
+
+					// if (scroll >= 1) {
+						// $(".navigation").addClass("nav_white");
+					// }
+					// else
+					// {
+					// $(".navigation").removeClass("nav_white");
+					// }
+				// });
+			// })(jQuery);		
+		</script>
+		
+
+		<script type="text/javascript">
+			jQuery(document).ready(function() {
+				
+				jQuery(window).scroll(function(){
+					var width = screen.width;
+					var top  = window.pageYOffset || document.documentElement.scrollTop;
+					console.log(top);
+					console.log('docu height is '+document.body.scrollHeight);
+					
+					if(width <= '767' &&  width >= '480'){
+							console.log('In Orientation--------------------');
+							if(top <= document.body.scrollHeight){
+								
+								
+								var position = $('#div_final').position();
+								console.log('scroll top is '+top);
+								console.log('In IF condition div position  '+position.top);
+								if(position.top <= top+400){
+									
+									jQuery('.mp-menu').addClass('height_of_menu');
+									// disable scroll
+										if (window.addEventListener) // older FF
+											window.addEventListener('DOMMouseScroll', preventDefault, false);
+										
+										window.onwheel = preventDefault; // modern standard
+										window.onmousewheel = document.onmousewheel = preventDefault; // older browsers, IE
+										window.ontouchmove  = preventDefault; // mobile
+										document.onkeydown  = preventDefaultForScrollKeys;
+										
+										
+										
+																			
+								} else {
+									var newvar = jQuery(window).scrollTop();
+									var news = newvar + 60;
+									jQuery('.mp-menu').css('top',news);
+									jQuery('.mp-menu').removeClass('height_of_menu');
+									
+								}
+
+								
+								//jQuery('.mp-menu').addClass('height_of_menu');
+								
+							} else {
+								console.log('In Else condition');
+								jQuery('.mp-menu').removeClass('height_of_menu');
+								var newvar = jQuery(window).scrollTop();
+								 console.log(newvar);
+								var news = newvar - 60;
+								jQuery('.mp-menu').css('top',news);
+							}
+					
+					
+					} else {
+						/* Portrait */
+						if(top <= document.body.scrollHeight){
+						 
+							var newvar = jQuery(window).scrollTop();
+							var news = newvar + 60;
+							jQuery('.mp-menu').css('top',news);
+						}
+					
+					}
+				
+						
+					
+					//if(jQuery(window).height()){
+				});
+		
+				var a = jQuery(".footer-base").offset().top;
+
+				jQuery(window).scroll(function(){
+				  var s = jQuery(window).height()+jQuery(window).scrollTop();
+				if(s >= a){
+					
+				  	jQuery('.mp-menu').addClass('height_of_menu');
+				}else{
+					
+				   	jQuery('.mp-menu').removeClass('height_of_menu');
+				}
+				});
+
+			
+				/*var width = screen.width;
+				if(width <= '767' &&  width >= '480'){
+					var aa = jQuery("footer").offset().top;
+
+					jQuery(window).scroll(function(){
+					  var ss = jQuery(window).height()+jQuery(window).scrollTop();
+					if(ss >= aa){
+						
+					  	jQuery('.mp-menu').addClass('height_of_menu');
+					}else{
+						
+					   	jQuery('.mp-menu').removeClass('height_of_menu');
+					}
+					});
+				}*/
+		
+			
+		
+					
+			});	
+		</script>
+
+
+
+
+
+		<!--script type="text/javascript">
+			//jQuery(document).ready(function() {
+		      	setInterval(function(){
+		        	jQuery('.wpcf7-response-output').fadeOut('slow');
+		      	},5000);
+		  	//});
+	    </script>
+
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+  $(".ddd").click(function(event) {
+  event.preventDefault();
+  $('html,body').animate( { scrollTop:$(this.hash).offset().top -46 } , 2000);
+  } );
+
+
+} );
+		
+			</script-->
+
+	
+
+	</body>
+
+<!-- scripts for home page -->
+<!--script type="text/javascript">
+    	var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+		 autoplay: 2500,
+		 pagination: '.swiper-pagination',
+		   paginationClickable: true,
+        spaceBetween: 30,
+		 autoplayDisableOnInteraction: false,
+		 loop:true,
+        coverflow: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+             slideShadows : true
+        }
+    });
+</script-->
+<script>  
+	(function($){
+	    $(document).ready(function() {  
+	       $("#myCarousel").swiperight(function() {  
+	          $("#myCarousel").carousel('prev');  
+	        });  
+	       $("#myCarousel").swipeleft(function() {  
+	          $("#myCarousel").carousel('next');  
+	       });  
+		   
+	    });  
+	});  
+</script> 
+<script type="text/javascript">
+	(function($){
+			$("#request_btn").click(function(){ 
+					jQuery('html, body').animate({
+					        scrollTop: jQuery("#get-started").offset().top
+					    }, 2000);
+
+				});
+		})(jQuery);
+</script>

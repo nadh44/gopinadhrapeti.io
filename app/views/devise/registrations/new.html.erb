@@ -1,0 +1,63 @@
+<style>
+.site-main {
+		margin-top: 104px;
+	}
+#loginContainer {
+    display: flex;              /* establish flex container */
+    flex-direction: column;     /* stack flex items vertically */
+    justify-content: center;    /* center items vertically, in this case */
+    align-items: center;        /* center items horizontally, in this case */
+    height: 430px;
+}
+.box {
+    width: 300px;
+    margin: 5px;
+}
+</style>
+<div id="page" class="site">
+	<div id="content" class="site-content">
+		<div id="primary" class="content-area">
+			<main id="main" class="site-main" role="main">
+<div class="container">
+  <div class="row">
+    <div class="col-md-12" id="loginContainer">
+      <h2><b><i class="fa fa-sign-in" aria-hidden="true"></i> Admin Sign up</b></h2>
+      <div class="box">
+        <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+          <%= devise_error_messages! %>
+
+          <div class="field login-margin">
+            <%= f.label :name %><br />
+            <%= f.text_field :name, class: "form-control", autofocus: true, required: true %>
+          </div>
+
+          <div class="field login-margin">
+            <%= f.label :email %><br />
+            <%= f.email_field :email, class: "form-control", autofocus: true, required: true %>
+          </div>
+
+          <div class="field login-margin">
+            <%= f.label :password %>
+            <% if @minimum_password_length %>
+            <em>(<%= @minimum_password_length %> characters minimum)</em>
+            <% end %><br />
+            <%= f.password_field :password,class: "form-control", autocomplete: "off", required: true %>
+          </div>
+
+          <div class="field login-margin">
+            <%= f.label :password_confirmation %><br />
+            <%= f.password_field :password_confirmation,class: "form-control", autocomplete: "off", required: true %>
+          </div>
+<br>
+          <div class="actions login-margin">
+            <%= f.submit "Sign up", class: "btn btn-success form-control" %>
+          </div>
+        <% end %>
+        </div>
+    </div>
+  </div>
+</div>    
+</main>
+</div>    
+
+<!--%= render "devise/shared/links" %-->

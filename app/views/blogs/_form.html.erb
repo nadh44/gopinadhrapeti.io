@@ -1,0 +1,94 @@
+<head>
+<!--script src="/assets/jquery.js"></script>
+<script src="/assets/jquery.cleditor.min.js"></script-->
+ <%= javascript_include_tag "jquery.js" %>
+  <%= javascript_include_tag "jquery.cleditor.min.js" %>
+
+   <!--link rel="stylesheet" type="text/css" href="/assets/jquery.cleditor.css"-->
+    <%= stylesheet_link_tag "jquery.cleditor.css" %>
+   
+  
+   <script type="text/javascript"> 
+     jQuery(document).ready(function ($) { 
+        $("#input").cleditor(); 
+      }); 
+    </script> 
+ </head> 
+
+<div class="ro large-top">
+  <div class="col-md-2">
+    <%= render 'layouts/blogsidebar' %>
+  </div>
+  <div class="col-md-10 blogbackground">
+    <div class="row">
+      <div class="col-md-12">
+        <h3>New Post/ Edit post</h3>
+        <hr>
+      </div>
+    </div>
+    <%= form_for @blog, :html => { :class => 'form-horizontal', multipart: true } do |f| %>
+      <div class="col-md-12">
+        <div class="row">
+          <!--div class="col-md-12">
+            <label>Category</label>
+              <div class="form-group">
+                <!--%= f.select :category, [["",""], ["",""], ["",""],["",""],["Other","Other"],["",""],["", ""],["Cancellation and Returns", "CancelReturn"],], {id: 'category', prompt: 'Select...'},class: "form-control", :required => false %>
+              </div>                  
+          </div-->
+            </div> 
+         <!--%= f.hidden_field :user_id, value: current_user.id %-->  
+         <!--%= f.hidden_field :name, value: current_user.name %-->
+        <div class="row">
+          <div class="col-md-12">
+            <%= f.label :title, :class => 'control-label' %>
+            <div class="form-group">
+              <%= f.text_field :title, class: "form-control" %>
+            </div>  
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <%= f.label :keywords, :class => 'control-label' %>
+            <div class="form-group">
+              <%= f.text_field :keywords, class: "form-control" %>
+            </div>
+          </div>  
+        </div>  
+        
+        <div class="row">
+          <div class="col-md-12">
+            <%= f.label :description, :class => 'control-label' %>
+            <div class="form-group">
+              <%= f.cktext_area :description, id: "input", :class => 'ckeditor',ckeditor: {toolbar: 'mini'} %>
+
+            </div>
+          </div>  
+        </div>
+       
+        
+
+        <div class="row">
+          <div class="col-md-12 amet-sed">
+            <label>Upload Image</label>
+            <div class="form-group">
+              <span class="">
+                  <i class="fa fa-cloud-upload fa-lg"></i> Upload Photos
+                    <%= file_field_tag "images[]", type: :file, multiple: true %>
+              </span>    
+            </div>
+          </div>  
+        </div>
+
+        <div class="row">
+          <div class="col-md-12 amet-sed">
+            <div class="form-group">
+              <%= f.submit "Create", class: "btn btn-success" %>
+            </div>  
+          </div>
+        </div>
+      </div>    
+    <% end %>
+  </div>
+</div>    
+
+  

@@ -1,0 +1,71 @@
+<style>
+.popular-border{
+  width: 1180px;
+   height: 400px;
+}
+.mp-pusher{
+    height:0px!important;
+  }
+span{
+  color: #545454;
+    font-size: 15px !important;
+    line-height: 24px;
+    font-family: !important; 
+   background-color: #ffff!important;
+color: #333333 !important; 
+}
+.content-area{
+  margin-top: 100px;
+}
+.mp-pusher{
+    height:0px!important;
+  }
+</style>
+<div id="primary" class="content-area">
+  <main id="main" class="site-main" role="main">
+  <div class="header-last">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+           
+          </div>
+        </div>
+      </div>
+    </div>          
+
+      
+  <div class="container">
+    <div class="row">
+    <div class="col-md-12">
+ 
+<article id="post-9329" class="post-9329 post type-post status-publish format-standard has-post-thumbnail hentry category-bigcommerce category-e-commerce category-web-development tag-age-verification-app-in-bigcommerce tag-age-verification-page tag-age-verification-pop-up tag-bigcommerce-age-verification-app tag-bigcommerce-app-development">
+  <header class="entry-header">
+    
+  </header>
+    
+   <% if @blog_photos.present? %>
+
+            <% @blog_photos.each do |blog_photo| %>
+  <div class="post-thumbnail">
+
+    <%= image_tag blog_photo.image.url(), class: "img-responsive popular-border"  %>
+    
+  
+  </div><%end%>
+   <%else%>
+      
+  <%end%><!-- .post-thumbnail -->
+
+    <footer class="entry-footer">
+    <span class="byline"><span class="author vcard"><span class="posted-on"><span class="screen-reader-text">Posted on </span> <time class="entry-date published" ><%= @blog.created_at.strftime("%D")%></time> </span><span class="cat-links">  </footer><!-- .entry-footer -->
+  <div class="entry-content">
+ 
+  <h1 class="entry-title"><%= @blog.title %></h1> 
+  <p><%= raw(@blog.description)%></p>
+  </div><!-- .entry-content -->
+
+  
+</article>
+</div>
+</div>
+</div>

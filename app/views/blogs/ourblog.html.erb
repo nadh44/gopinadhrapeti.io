@@ -1,0 +1,56 @@
+<div class="smaple">
+  <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="pageTitle heading-top-dist">Our Blog</h2>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container huge-top small-bottom">
+	<div class="row">
+		<div class="col-md-8 col-sm-8">
+			<div class="heads"><h2><b>Our Blog</b></h2></div>
+			<% @blog.last(1).each do |blog| %>
+				<div class="row">
+					<div class="col-md-8 col-sm-8">
+						<%= link_to blog do %>
+							<div class="thumbnai">
+								<div class="view view-eighth">
+									<%= image_tag blog.blog_photos[0].image.url, class: "img-responsive" if blog.blog_photos.length > 0 %>
+								</div>       
+							</div>
+						<% end %>
+					</div>
+					<div class="col-md-4 col-sm-4">
+						<div class="truncate">
+							<p><%= raw(blog.description) %></p>
+						</div>	
+						<div>
+							<%= link_to "Read More...", blog_path(blog), class: "info" %>
+						</div>
+					</div>
+				</div>	
+				<div class="row">
+					<div class="col-md-12">
+						<div class="actions">
+									<% if user_signed_in? %>
+										<% if current_user.id == blog.user.id || current_user.admin? %>
+											<%= link_to "Edit", edit_blog_path(blog), class: "info" %>
+											<%= link_to 'Delete', blog_path(blog), :method => 'delete', data: {confirm: "Are you sure?"}, :class => 'info' %>
+											<%= link_to "Qucik View", blog_path(blog), class: "info" %>
+										<% else %>
+											Posted By: Admin
+										<% end %>
+										
+									<% end %>
+								</div>	
+					</div>
+				</div>		
+			<% end %>
+		</div>
+		<div class="col-md-4 col-sm-4">
+		</div>
+	</div>		
+</div>		
